@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./Navbar.css";
+import "../styles/Navbar.css";
 
 function MyNavbar() {
   const handleResumeDownload = (e) => {
@@ -21,10 +21,8 @@ function MyNavbar() {
         <li>
             <a href="/assets/resume.pdf" onClick={handleResumeDownload}>Resume</a>
         </li>
-      </ul>
-      <ul>
-        <li className="Navbar-title">PORTFOLIO</li>
-      </ul>
+        </ul>
+        <span className="Navbar-title">PORTFOLIO</span>
     </div>
   );
 }

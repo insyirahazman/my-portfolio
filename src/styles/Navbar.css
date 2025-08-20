@@ -13,7 +13,7 @@ main {
 }
 
 .Navbar {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 15px;
   width: 100%;
   position: fixed;
@@ -30,11 +30,18 @@ main {
 .Navbar-title {
   font-weight: bold;
   color: #172c66;
-  margin-top: 10px;
-  align-items: center;
+  margin-top: 0;
+  margin-left: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+}
+
+.Navbar-links {
   display: flex;
-  width: 100%;
-  justify-content: space-between;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .Navbar ul{
@@ -53,6 +60,7 @@ main {
   display: block;
   text-align: center;
   font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .Navbar a {
@@ -65,7 +73,6 @@ main {
 
 .Navbar a:hover{
   background-color: #ff8ba7;
-  transform: scaleX(1.1);
   border-radius: 20px;
   color:#fffffe;
 }

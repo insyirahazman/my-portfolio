@@ -1,9 +1,8 @@
 .App {
-  background-color: #faeee7;
-  text-align: center;
-  flex-direction: column;
+  background-color: #fec7d7;
   min-height: 100vh;
-  display: flex;
+  width: 100%;
+  font-family: 'Inter', sans-serif;
 }
 
 .MainContent{
@@ -31,13 +30,27 @@ h2{
   text-align: center;
   font-size: 30px;
   color: #172c66;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h3{
+  margin: 0;
+  text-align: left;
+  font-size: 16px;
+  color: #0e172c;
+  font-family: 'Poppins', sans-serif;
+}
+
+h5{
+  color: #0e172c;
+  font-family: 'Poppins', sans-serif;
 }
 
 p{
   text-align: center;
   color: #172c66;
+  font-family: 'Inter', sans-serif;
 }
-
 
 .about-section {
   background: linear-gradient(135deg, #fce3d6, #f8c5a3);
@@ -83,4 +96,18 @@ p{
   margin-top: 50px;
   margin-bottom: 10px;
   text-align: center;
+}
+
+.project-card{
+  background-color: #fffffe;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.project-card:hover{
+  transform: translateY(-5px);
 }
