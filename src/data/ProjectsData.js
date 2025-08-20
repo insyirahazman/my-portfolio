@@ -2,11 +2,11 @@ const projects = [
   {
     id: 1,
     title: "Stock Analysis Web",
-    status: "Complete",
+    status: "Open Source",
     description: "A comprehensive web-based stock analysis platform designed for traders, investors, and financial analysts to make informed investment decisions through data-driven insights and predictive analytics.",
     video: "/assets/project-1.mp4",
     link: "https://github.com/insyirahazman/Stock-Analysis-Web.git",
-    tags: ["Stock", "Twelve Data API"]
+    tags: ["HTML", "CSS", "JavaScript", "Twelve Data API"]
   },
   {
     id: 2,

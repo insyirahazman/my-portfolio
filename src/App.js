@@ -31,14 +31,14 @@ function App(){
 function ProjectListWrapper() {
   const { type } = useParams();
   const statusMap = {
-    "complete": "Complete",
+    "complete": "Open Source",
     "current": "Current",
     "upcoming": "Upcoming"
   };
   const filteredProjects = projects.filter(
     (project) => project.status.toLowerCase() === statusMap[type]?.toLowerCase()
   );
-  return <ProjectList title={statusMap[type] + " Projects"} projects={filteredProjects.map(p => p.title)} />;
+  return <ProjectList title={statusMap[type] + " Projects"} projects={filteredProjects} />;
 }
 
 export default App;

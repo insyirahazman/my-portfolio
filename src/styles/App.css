@@ -99,8 +99,7 @@ p{
 }
 
 .project-card{
-  background-color: #fffffe;
-  border: 1px solid #eeeeee;
+  background-color: #fef6e4;
   border-radius: 5px;
   margin-top: 20px;
   padding: 16px;
@@ -110,4 +109,14 @@ p{
 
 .project-card:hover{
   transform: translateY(-5px);
+}
+
+.project-list{
+  background-color: #fef6e4;
+  border-radius: 5px;
+  margin-top: 20px;
+  width: 400px;
+  height: 400px flex;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
