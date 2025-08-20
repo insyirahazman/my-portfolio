@@ -9,7 +9,7 @@ function Projects() {
     return (
         <div>
             <h2>My Projects</h2>
-            <div className="container">
+            <div className="project-list">
                 <ProjectCard title="Open Source Projects" description={openSourceCount} type="complete" />
                 <ProjectCard title="Current Projects" description={currentCount} type="current" />
                 <ProjectCard title="Upcoming Projects" description={upcomingCount} type="upcoming" />

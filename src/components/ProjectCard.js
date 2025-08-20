@@ -9,7 +9,7 @@ function ProjectCard({ title, description, type }) {
 
   return (
     <div className="project-card" onClick={handleClick} style={{ cursor: "pointer" }}>
-      <h3>{title}</h3>
+  <h3 style={{ textAlign: "center" }}>{title}</h3>
       <p>{description}</p>
     </div>
   );

@@ -1,7 +1,10 @@
-function SkillCard({skill}){
+
+import "../styles/App.css";
+
+function SkillCard({ skill }) {
     return (
         <div className="skill-card">
-            <h3>{skill.name}</h3>
+            {skill.name}
         </div>
     );
 }

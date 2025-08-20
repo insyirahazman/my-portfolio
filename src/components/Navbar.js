@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "../styles/Navbar.css";
+import { FiDownload } from "react-icons/fi";
 
 function MyNavbar() {
   const handleResumeDownload = (e) => {
@@ -19,7 +20,9 @@ function MyNavbar() {
           <Link to="/projects">Projects</Link>
         </li>
         <li>
-            <a href="/assets/resume.pdf" onClick={handleResumeDownload}>Resume</a>
+            <a href="/assets/resume.pdf" onClick={handleResumeDownload} style={{ display: "flex", alignItems: "center" }}>
+              Resume <FiDownload style={{ marginLeft: "6px", color: "#222" }} />
+            </a>
         </li>
         </ul>
         <span className="Navbar-title">PORTFOLIO</span>

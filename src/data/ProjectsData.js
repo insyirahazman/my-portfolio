@@ -10,18 +10,48 @@ const projects = [
   },
   {
     id: 2,
-    title: "Patient Risk Prediction",
+    title: "Bus Booking System",
     status: "Current",
     description: "End-to-end ML model with deployment using Streamlit.",
-    image: "/assets/project2.png",
-    link: "https://github.com/yourrepo/patient-risk"
+    image: "/assets/project-2.png",
+    link: "https://github.com/insyirahazman/bus-booking-system",
+    tags: ["Java"]
   },
   {
     id: 3,
-    title: "Online Bookstore Management",
-    status: "Upcoming",
+    title: "Rental Management",
+    status: "Current",
     description: "Database system to track books, customers, and sales.",
-    image: "/assets/project3.png"
+    image: "/assets/project-3.png",
+    link: "https://github.com/insyirahazman/rental-management",
+    tags: ["C++"]
+  },
+  {
+    id: 4,
+    title: "Weather App",
+    status: "Upcoming",
+    description: "A web application that provides weather updates and forecasts.",
+    image: "/assets/project-4.png",
+    link: "https://github.com/insyirahazman/weather-app",
+    tags: ["upcoming"]
+  },
+  {
+    id: 5,
+    title: "Business Performance Dashboard",
+    status: "Upcoming",
+    description: "A dashboard for visualizing key business metrics integrating marketing and sales datasets.",
+    image: "/assets/project-5.png",
+    link: "https://github.com/insyirahazman/business-performance-dashboard",
+    tags: ["Power BI", "Data Visualization"]
+  },
+  {
+    id: 6,
+    title: "World Happiness Dashboard",
+    status: "Current",
+    description: "An analytical web application that visualizes the World Happiness Report data.",
+    image: "/assets/project-6.png",
+    link: "https://github.com/insyirahazman/world-happiness-report",
+    tags: ["Power BI", "Data Visualization"]
   }
 ];
 
