@@ -2,29 +2,43 @@ body{
   margin: 0;
 }
 
-main{
+main {
+  flex: 1;
   padding: 20px;
   background-color: #f0f0f0;
   margin-left: 20px;
   margin-right: 20px;
+  margin-top: 100px;
+  background-color: #f3d2c1;
 }
 
 .Navbar {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 15px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 20px;
   display: flex;
+  box-sizing: border-box;
   align-items: center;
   justify-content: space-between;
 }
 
 .Navbar-title {
   font-weight: bold;
-  font-size: 1.2rem;
-  color: #33272a;
-  margin-left: 20px;
+  color: #172c66;
+  margin-top: 10px;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .Navbar ul{
   list-style-type: none;
-  background-color: #faeee7;
   padding: 0px;
   margin: 0;
   display: flex;
@@ -33,22 +47,25 @@ main{
 
 .Navbar li {
   display: inline;
-  margin-right: 20px;
-  padding: 15px;
+  padding: 10px;
   display: flex;
   align-items: center;
   display: block;
   text-align: center;
+  font-size: 18px;
 }
 
 .Navbar a {
-  color: #33272a;
+  color: #001858;
   text-decoration: none;
-  padding: 15px;
+  padding: 10px;
   display: block;
   text-align: center;
 }
 
 .Navbar a:hover{
   background-color: #ff8ba7;
+  transform: scaleX(1.1);
+  border-radius: 20px;
+  color:#fffffe;
 }

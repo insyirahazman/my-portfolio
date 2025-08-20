@@ -1,20 +1,32 @@
-import "./Navbar.css"
+import { Link } from "react-router-dom";
+import "./Navbar.css";
 
-function Navbar() {
+function MyNavbar() {
+  const handleResumeDownload = (e) => {
+    e.preventDefault();
+    const proceed = window.confirm("Do you want to download the resume?");
+    if (proceed){
+      window.location.href = "/assets/resume.pdf"; 
+    }
+  };
   return (
     <div className="Navbar">
-      <div className="Navbar-content">
-        <nav>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li className="Navbar-title">PORTFOLIO</li>
-          </ul>
-        </nav>
-      </div>
+      <ul>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/projects">Projects</Link>
+        </li>
+        <li>
+            <a href="/assets/resume.pdf" onClick={handleResumeDownload}>Resume</a>
+        </li>
+      </ul>
+      <ul>
+        <li className="Navbar-title">PORTFOLIO</li>
+      </ul>
     </div>
   );
 }
 
-export default Navbar;
+export default MyNavbar;
