@@ -1,8 +1,14 @@
 import SkillList from "../components/SkillList";
 import { Link } from "react-router-dom";
 import { FiMonitor, FiBarChart, FiBook, FiCloud } from "react-icons/fi";
-import { BsCircleFill } from "react-icons/bs";
-import { FaGithub } from "react-icons/fa";
+import githubImg from "../assets/github.png";
+import project1Video from "../assets/project-1.mp4";
+
+// Map video filenames to imports
+const videoMap = {
+  "project-1.mp4": project1Video,
+  // Add more: "project-2.mp4": project2Video,
+};
 
 function ProjectList({ title = "Projects", projects = [] }) {
   return (
@@ -24,43 +30,33 @@ function ProjectList({ title = "Projects", projects = [] }) {
                   <Link to={`/project/${project.id}`} style={{ textDecoration: "none", color: "inherit" }}>
                     {project.title}
                   </Link>
+                  {project.link && (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ marginLeft: "10px" }}
+                    >
+                      <img src={githubImg} alt="GitHub" width="20" height="20" />
+                    </a>
+                  )}
                 </h3>
-                {project.link && (
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{
-                      color: "#222",
-                      fontSize: "0.95em",
-                      display: "inline-flex",
-                      alignItems: "center",
-                      textDecoration: "none"
-                    }}
-                    onMouseOver={e => (e.currentTarget.style.textDecoration = "underline")}
-                    onMouseOut={e => (e.currentTarget.style.textDecoration = "none")}
-                  >
-                    <FaGithub style={{ marginRight: "5px" }} />
-                    GitHub
-                  </a>
-                )}
-              <h5>{project.description}
-                {project.video && (
+                <h5>{project.description}</h5>
+                {project.video && videoMap[project.video] && (
                   <video width="320" height="240" controls>
-                    <source src={project.video} type="video/mp4" />
+                    <source src={videoMap[project.video]} type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                 )}
-              </h5>
-              <h5>Tech Stack:</h5>
-                      {project.tags && project.tags.length > 0 && (
-                        <div className="project-tags">
-                          <SkillList skills={project.tags} />
-                        </div>
-                      )}
-            </div>
-          );
-        })
+                <h5>Tech Stack:</h5>
+                {project.tags && project.tags.length > 0 && (
+                  <div className="project-tags">
+                    <SkillList skills={project.tags} />
+                  </div>
+                )}
+              </div>
+            );
+          })
         ) : (
           <div>No projects found.</div>
         )}

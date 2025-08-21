@@ -4,7 +4,7 @@ const projects = [
     title: "Stock Analysis Web",
     status: "Open Source",
     description: "A comprehensive web-based stock analysis platform designed for traders, investors, and financial analysts to make informed investment decisions through data-driven insights and predictive analytics.",
-    video: "/assets/project-1.mp4",
+    video: "project-1.mp4",
     link: "https://github.com/insyirahazman/Stock-Analysis-Web.git",
     tags: ["HTML", "CSS", "JavaScript", "Twelve Data API"]
   },

@@ -1,15 +1,19 @@
 import { Link } from "react-router-dom";
 import "../styles/Navbar.css";
 import { FiDownload } from "react-icons/fi";
+import homeImg from "../assets/home.png";
+import projectsImg from "../assets/projects.png";
+import resumePDF from "../assets/resume.pdf";
 
 function MyNavbar() {
   const handleResumeDownload = (e) => {
     e.preventDefault();
     const proceed = window.confirm("Do you want to download the resume?");
-    if (proceed){
-      window.location.href = "../assets/resume.pdf"; 
+    if (proceed) {
+      window.location.href = resumePDF;
     }
   };
+
   return (
     <div className="Navbar">
       <ul>
@@ -20,12 +24,20 @@ function MyNavbar() {
           <Link to="/projects">Projects</Link>
         </li>
         <li>
-            <a href="../assets/resume.pdf" onClick={handleResumeDownload} style={{ display: "flex", alignItems: "center" }}>
-              Resume <FiDownload style={{ marginLeft: "6px", color: "#222" }} />
-            </a>
+          <a
+            href={resumePDF}
+            onClick={handleResumeDownload}
+            style={{
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
+            Resume{" "}
+            <FiDownload style={{ marginLeft: "6px", color: "#222" }} />
+          </a>
         </li>
-        </ul>
-        <span className="Navbar-title">PORTFOLIO</span>
+      </ul>
+      <span className="Navbar-title">PORTFOLIO</span>
     </div>
   );
 }
