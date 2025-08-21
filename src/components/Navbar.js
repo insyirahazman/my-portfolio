@@ -7,7 +7,7 @@ function MyNavbar() {
     e.preventDefault();
     const proceed = window.confirm("Do you want to download the resume?");
     if (proceed){
-      window.location.href = "/assets/resume.pdf"; 
+      window.location.href = "../assets/resume.pdf"; 
     }
   };
   return (
@@ -20,7 +20,7 @@ function MyNavbar() {
           <Link to="/projects">Projects</Link>
         </li>
         <li>
-            <a href="/assets/resume.pdf" onClick={handleResumeDownload} style={{ display: "flex", alignItems: "center" }}>
+            <a href="../assets/resume.pdf" onClick={handleResumeDownload} style={{ display: "flex", alignItems: "center" }}>
               Resume <FiDownload style={{ marginLeft: "6px", color: "#222" }} />
             </a>
         </li>
