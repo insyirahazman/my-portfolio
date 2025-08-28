@@ -1,5 +1,5 @@
 # My Portfolio
-Live Website: https://insyirahazman.github.io/
+Live Website: https://insyirahazman.github.io/my-portfolio
 
 A minimalist portfolio website built with React, featuring:
 - Dynamic project cards with type icons and status badges
