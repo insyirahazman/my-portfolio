@@ -130,7 +130,7 @@ p{
   min-height: 80px;
   margin-bottom: 16px;
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start; /* or use center for vertical centering */
 }
 
 @media (max-width: 900px) {
