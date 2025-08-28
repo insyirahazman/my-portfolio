@@ -59,7 +59,7 @@ const projects = [
     status: "Open Source",
     description: "A personal portfolio website to showcase my projects and skills.",
     video: "project-7.mp4",
-    link: "https://insyirahazman.github.io/my-portfolio/",
+    link: "https://github.com/insyirahazman/my-portfolio.git",
     tags: ["React", "CSS"]
   }
 ];
