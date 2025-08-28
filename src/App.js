@@ -2,7 +2,7 @@ import MyNavbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Footer from "./components/Footer"; 
 
-import { HashRouter as Router, Route, Switch, useParams } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import Projects from "./pages/Projects";
 import projects from "./data/ProjectsData";
 import ProjectList from "./pages/ProjectList";
