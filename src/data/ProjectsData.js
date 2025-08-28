@@ -52,6 +52,15 @@ const projects = [
     image: "/assets/project-6.png",
     link: "https://github.com/insyirahazman/world-happiness-report",
     tags: ["Power BI", "Data Visualization"]
+  },
+  {
+    id: 7,
+    title: "Personal Portfolio",
+    status: "Current",
+    description: "A personal portfolio website to showcase my projects and skills.",
+    image: "/assets/project-7.png",
+    link: "https://insyirahazman.github.io/my-portfolio/",
+    tags: ["React", "CSS"]
   }
 ];
 

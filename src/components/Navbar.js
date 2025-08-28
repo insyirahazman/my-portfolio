@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 import "../styles/Navbar.css";
 import { FiDownload } from "react-icons/fi";
-import homeImg from "../assets/home.png";
-import projectsImg from "../assets/projects.png";
 import resumePDF from "../assets/resume.pdf";
 
 function MyNavbar() {
