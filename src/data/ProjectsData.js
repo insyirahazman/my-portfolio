@@ -56,7 +56,7 @@ const projects = [
   {
     id: 7,
     title: "Personal Portfolio",
-    status: "Current",
+    status: "Completed",
     description: "A personal portfolio website to showcase my projects and skills.",
     image: "/assets/project-7.png",
     link: "https://insyirahazman.github.io/my-portfolio/",

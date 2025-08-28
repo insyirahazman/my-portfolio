@@ -4,7 +4,7 @@ import profileImg from "../assets/profile.png";
 function Home() {
     return (
         <div>
-            <img src={profileImg} alt="Insyirah Azman" style={{ border: "5px solid rgba(255, 255, 255, 1)", borderRadius: "50%", display: "block", margin: "0 auto", width: "180px", boxShadow: "0 4px 16px rgba(23,44,102,0.15)" }} />
+            <img src={profileImg} alt="Insyirah Azman" style={{ border: "3px solid rgba(255, 255, 255, 1)", borderRadius: "50%", display: "block", margin: "0 auto", width: "180px", boxShadow: "0 4px 16px rgba(23,44,102,0.15)" }} />
             <br />
             <h2 style={{ color: "#172c66", fontWeight: "bold", textAlign: "center", position: "relative" }}>
                 <span role="img" aria-label="wave" style={{ fontSize: "1.5em", marginRight: "8px" }}>👋</span>
