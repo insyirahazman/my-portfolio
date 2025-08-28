@@ -126,6 +126,13 @@ p{
   width: 100%;
 }
 
+.projectlist-card h5 {
+  min-height: 80px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: flex-end;
+}
+
 @media (max-width: 900px) {
   .project-list {
     grid-template-columns: repeat(2, 1fr);
