@@ -3,10 +3,12 @@ import { Link } from "react-router-dom";
 import { FiMonitor, FiBarChart, FiBook, FiCloud } from "react-icons/fi";
 import githubImg from "../assets/github.png";
 import project1Video from "../assets/project-1.mp4";
+import project7Video from "../assets/project-7.mp4";
 
 // Map video filenames to imports
 const videoMap = {
   "project-1.mp4": project1Video,
+  "project-7.mp4": project7Video
   // Add more: "project-2.mp4": project2Video,
 };
 
