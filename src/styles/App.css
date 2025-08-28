@@ -130,8 +130,10 @@ p{
 }
 
 .projectlist-card h5 {
-  margin-bottom: 16px;
-  display: block;
+  min-height: 64px;      /* Ensures all descriptions take up the same space */
+  margin-bottom: 8px;    /* Small gap below "Tech Stack:" */
+  display: flex;
+  align-items: flex-start; /* Align text to the top of the space */
 }
 
 @media (max-width: 900px) {
@@ -169,6 +171,6 @@ p{
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin-top: 12px;
+  margin-top: 0;      /* Remove extra space above buttons */
   margin-bottom: 0;
 }
