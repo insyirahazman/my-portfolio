@@ -2,7 +2,7 @@ import MyNavbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Footer from "./components/Footer"; 
 
-import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Projects from "./pages/Projects";
 import projects from "./data/ProjectsData";
 import ProjectList from "./pages/ProjectList";
@@ -17,12 +17,12 @@ function App(){
       <div>
         <MyNavbar />
         <main>
-          <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/projects" exact component={Projects} />
-            <Route path="/projects/:type" component={ProjectListWrapper} />
-            <Route path="/project/:id" component={ProjectDetailWrapper} />
-          </Switch>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/projects/:type" element={<ProjectListWrapper />} />
+            <Route path="/project/:id" element={<ProjectDetailWrapper />} />
+          </Routes>
         </main>
         <main><Footer /></main>
       </div>
