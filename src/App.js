@@ -2,7 +2,7 @@ import MyNavbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Footer from "./components/Footer"; 
 
-import { BrowserRouter, Routes, Route, useParams } from "react-router-dom";
+import { HashRouter as Router, Route, Switch, useParams } from "react-router-dom";
 import Projects from "./pages/Projects";
 import projects from "./data/ProjectsData";
 import ProjectList from "./pages/ProjectList";
@@ -13,20 +13,20 @@ import "./styles/Navbar.css";
 
 function App(){
   return(
-    <BrowserRouter>
+    <Router>
       <div>
         <MyNavbar />
         <main>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/projects/:type" element={<ProjectListWrapper />} />
-            <Route path="/project/:id" element={<ProjectDetailWrapper />} />
-          </Routes>
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/projects" exact component={Projects} />
+            <Route path="/projects/:type" component={ProjectListWrapper} />
+            <Route path="/project/:id" component={ProjectDetailWrapper} />
+          </Switch>
         </main>
         <main><Footer /></main>
       </div>
-    </BrowserRouter>
+    </Router>
   );
 }
 
