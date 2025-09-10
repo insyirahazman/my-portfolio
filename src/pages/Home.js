@@ -1,4 +1,4 @@
-import "../styles/App.css";
+import "../App.css";
 import profileImg from "../assets/profile.png";
 
 function Home() {

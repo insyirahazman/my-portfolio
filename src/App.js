@@ -8,7 +8,7 @@ import projects from "./data/ProjectsData";
 import ProjectList from "./pages/ProjectList";
 import ProjectDetail from "./pages/ProjectDetail";
 
-import "./styles/App.css";
+import "./App.css";
 import "./styles/Navbar.css";
 
 function App(){

@@ -4,7 +4,7 @@ const projects = [
     title: "Stock Analysis Web",
     status: "Open Source",
     description: "A comprehensive web-based stock analysis platform designed for traders, investors, and financial analysts to make informed investment decisions through data-driven insights and predictive analytics.",
-    video: "/project_info/project-1.mp4",
+    video: "project-1.mp4",
     link: "https://github.com/insyirahazman/Stock-Analysis-Web.git",
     tags: ["HTML", "CSS", "JavaScript", "Twelve Data API"]
   },
@@ -13,7 +13,7 @@ const projects = [
     title: "Bus Booking System",
     status: "Current",
     description: "End-to-end ML model with deployment using Streamlit.",
-    image: "/assets/project-2.png",
+    image: "project-2.png",
     link: "https://github.com/insyirahazman/bus-booking-system",
     tags: ["Java"]
   },
@@ -22,7 +22,7 @@ const projects = [
     title: "Rental Management",
     status: "Current",
     description: "Database system to track books, customers, and sales.",
-    image: "/assets/project-3.png",
+    image: "project-3.png",
     link: "https://github.com/insyirahazman/rental-management",
     tags: ["C++"]
   },
@@ -31,7 +31,7 @@ const projects = [
     title: "Weather App",
     status: "Upcoming",
     description: "A web application that provides weather updates and forecasts.",
-    image: "/assets/project-4.png",
+    image: "project-4.png",
     link: "https://github.com/insyirahazman/weather-app",
     tags: ["upcoming"]
   },
@@ -40,7 +40,7 @@ const projects = [
     title: "Business Performance Dashboard",
     status: "Upcoming",
     description: "A dashboard for visualizing key business metrics integrating marketing and sales datasets.",
-    image: "/assets/project-5.png",
+    image: "project-5.png",
     link: "https://github.com/insyirahazman/business-performance-dashboard",
     tags: ["Power BI", "Data Visualization"]
   },
@@ -49,7 +49,7 @@ const projects = [
     title: "World Happiness Dashboard",
     status: "Current",
     description: "An analytical web application that visualizes the World Happiness Report data.",
-    image: "/assets/project-6.png",
+    image: "project-6.png",
     link: "https://github.com/insyirahazman/world-happiness-report",
     tags: ["Power BI", "Data Visualization"]
   },
@@ -58,16 +58,16 @@ const projects = [
     title: "Personal Portfolio",
     status: "Open Source",
     description: "A personal portfolio website to showcase my projects and skills.",
-    video: "/project_info/project-7.mp4",
+    video: "project-7.mp4",
     link: "https://github.com/insyirahazman/my-portfolio.git",
     tags: ["React", "CSS"]
   },
   {
     id: 8,
     title: "NVDIA Stock Prediction",
-    status: "Open source",
+    status: "Open Source",
     description: "An LSTM model to predict NVDIA stock prices.",
-    image: "/project_info/project-8.png",
+    image: "project-8.png",
     link: "https://github.com/insyirahazman/Stock-Prediction-using-LSTM.git",
     tags: ["Python", "Deep Learning", "LSTM", "Keras"]
   }
