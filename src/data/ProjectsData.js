@@ -4,7 +4,7 @@ const projects = [
     title: "Stock Analysis Web",
     status: "Open Source",
     description: "A comprehensive web-based stock analysis platform designed for traders, investors, and financial analysts to make informed investment decisions through data-driven insights and predictive analytics.",
-    video: "project-1.mp4",
+    video: "/project_info/project-1.mp4",
     link: "https://github.com/insyirahazman/Stock-Analysis-Web.git",
     tags: ["HTML", "CSS", "JavaScript", "Twelve Data API"]
   },
@@ -58,9 +58,17 @@ const projects = [
     title: "Personal Portfolio",
     status: "Open Source",
     description: "A personal portfolio website to showcase my projects and skills.",
-    video: "project-7.mp4",
+    video: "/project_info/project-7.mp4",
     link: "https://github.com/insyirahazman/my-portfolio.git",
     tags: ["React", "CSS"]
+  },
+  {
+    id: 8,
+    title: "NVDIA Stock Prediction",
+    status: "Open source",
+    description: "An LSTM model to predict NVDIA stock prices.",
+    image: "/project_info/project-8.png",
+    link: "https://github.com/insyirahazman/Stock-Prediction-using-LSTM.git"
   }
 ];
 
