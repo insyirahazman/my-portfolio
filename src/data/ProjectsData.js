@@ -27,15 +27,6 @@ const projects = [
     tags: ["C++"]
   },
   {
-    id: 4,
-    title: "Weather App",
-    status: "Upcoming",
-    description: "A web application that provides weather updates and forecasts.",
-    image: "project-4.png",
-    link: "https://github.com/insyirahazman/weather-app",
-    tags: ["upcoming"]
-  },
-  {
     id: 5,
     title: "Business Performance Dashboard",
     status: "Upcoming",
