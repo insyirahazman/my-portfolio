@@ -68,7 +68,8 @@ const projects = [
     status: "Open source",
     description: "An LSTM model to predict NVDIA stock prices.",
     image: "/project_info/project-8.png",
-    link: "https://github.com/insyirahazman/Stock-Prediction-using-LSTM.git"
+    link: "https://github.com/insyirahazman/Stock-Prediction-using-LSTM.git",
+    tags: ["Python", "Deep Learning", "LSTM", "Keras"]
   }
 ];
 
